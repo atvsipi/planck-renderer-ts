@@ -6,7 +6,8 @@
     "type": "git",
     "url": "https://github.com/atvsipi/planck-renderer-ts"
   },
-  "main": "dist/renderer.min.ts",
+  "main": "dist/renderer.js",
+  "types": "dist/renderer.d.ts",
   "bugs": {
     "url": "https://github.com/atvsipi/planck-renderer-ts/issues"
   },
