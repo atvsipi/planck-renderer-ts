@@ -1,23 +1,16 @@
 {
-  "name": "planck-renderer",
-  "version": "2.2.0",
-  "description": "Small rendering library for plank-js",
+  "name": "planck-renderer-ts",
+  "version": "1.0.0",
   "author": "Stas Kardash real.peha@gmail.com",
-  "main": "dist/renderer.min.js",
-  "scripts": {
-    "start": "gulp watch",
-    "build": "gulp build",
-    "dev": "gulp"
-  },
-  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RealPeha/planck-renderer"
+    "url": "https://github.com/atvsipi/planck-renderer-ts"
   },
+  "main": "dist/renderer.min.ts",
   "bugs": {
-    "url": "https://github.com/RealPeha/planck-renderer/issues"
+    "url": "https://github.com/atvsipi/planck-renderer-ts/issues"
   },
-  "homepage": "https://github.com/RealPeha/planck-renderer#readme",
+  "description": "Small rendering library for plank-js",
   "engines": {
     "node": ">=6.2.1"
   },
@@ -26,6 +19,7 @@
     "dist/",
     "example/"
   ],
+  "homepage": "https://github.com/atvsipi/planck-renderer-ts#readme",
   "keywords": [
     "planck",
     "planck-js",
@@ -36,12 +30,25 @@
     "html5",
     "2d"
   ],
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
+  "license": "ISC",
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp build",
+    "dev": "gulp"
+  },
+  "dependencies": {
+    "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-uglify-es": "^1.0.4"
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "planck-js": "^0.3.31"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
